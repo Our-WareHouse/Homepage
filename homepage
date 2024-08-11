@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Name - Home</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pompiere&display=swap');
+        body, html {
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+            overflow-x: hidden;
+        }
+        .video-background {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .video-background.active {
+            opacity: 1;
+        }
+        .content {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.5);
+            transition: background-color 0.3s ease;
+        }
+        .navbar:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        .navbar-brand img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        .nav-link {
+            color: white !important;
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #ffd700 !important;
+        }
+        .card-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            perspective: 1000px;
+            margin-top: 30px;
+            width: 100%;
+            max-width: 900px;
+        }
+        .card {
+            width: 80%;
+            max-width: 400px;
+            height: 450px;
+            position: absolute;
+            transition: all 0.5s ease;
+            cursor: pointer;
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: white;
+            opacity: 0;
+            pointer-events: none;
+        }
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .card.left {
+            transform: translateX(-100%) scale(0.8);
+            opacity: 1;
+            pointer-events: auto;
+        }
+        .card.center {
+            z-index: 1;
+            transform: scale(1);
+            opacity: 1;
+            pointer-events: auto;
+        }
+        .card.right {
+            transform: translateX(100%) scale(0.8);
+            opacity: 1;
+            pointer-events: auto;
+        }
+        .card.highlight {
+            box-shadow: 0 0 20px rgba(255,255,255,0.5);
+        }
+        .card-title {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .card-text {
+            font-size: 1.2rem;
+        }
+        @media (max-width: 768px) {
+            .card-container {
+                flex-direction: column;
+                height: auto;
+            }
+            .card {
+                position: relative;
+                width: 90%;
+                height: 300px;
+                margin-bottom: 20px;
+            }
+            .card.left, .card.right {
+                transform: none;
+                opacity: 1;
+                pointer-events: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <video class="video-background" autoplay muted loop id="video-background-1">
+        <source src="https://videos.pexels.com/video-files/3992463/3992463-uhd_2732_1440_25fps.mp4" type="video/mp4">
+    </video>
+    <video class="video-background" autoplay muted loop id="video-background-2">
+        <source src="https://videos.pexels.com/video-files/5258354/5258354-uhd_2732_1440_30fps.mp4" type="video/mp4">
+    </video>
+    <video class="video-background" autoplay muted loop id="video-background-3">
+        <source src="https://videos.pexels.com/video-files/4057303/4057303-uhd_2732_1440_25fps.mp4" type="video/mp4">
+    </video>
+    <video class="video-background" autoplay muted loop id="video-background-4">
+        <source src="https://videos.pexels.com/video-files/3773486/3773486-hd_1920_1080_30fps.mp4" type="video/mp4">
+    </video>
+    <video class="video-background" autoplay muted loop id="video-background-5">
+        <source src="https://videos.pexels.com/video-files/3773488/3773488-hd_1920_1080_30fps.mp4" type="video/mp4">
+    </video>
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#">
+                <img src="/api/placeholder/40/40" alt="Our Ware House" class="d-inline-block align-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Our Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#content">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content">
+        <!--
+        <h1 class="mb-4">Welcome to Our Company</h1>
+        <div class="d-flex gap-3">
+            <button class="btn btn-outline-light">Learn More</button>
+            <button class="btn btn-outline-light">Contact Us</button>
+        </div>
+        -->
+        <div class="card-container">
+            <div class="card" data-video="video-background-1">
+                <div class="card-body">
+                    <h5 class="card-title">Kid</h5>
+                    <p class="card-text"></p>
+                </div>
+            </div>
+            <div class="card" data-video="video-background-2">
+                <div class="card-body">
+                    <h5 class="card-title">Cat</h5>
+                    <p class="card-text"></p>
+                </div>
+            </div>
+            <div class="card" data-video="video-background-3">
+                <div class="card-body">
+                    <h5 class="card-title">Dog</h5>
+                    <p class="card-text"></p>
+                </div>
+            </div>
+            <div class="card" data-video="video-background-4">
+                <div class="card-body">
+                    <h5 class="card-title">Furniture</h5>
+                    <p class="card-text"></p>
+                </div>
+            </div>
+            <div class="card" data-video="video-background-5">
+                <div class="card-body">
+                    <h5 class="card-title">Build In</h5>
+                    <p class="card-text"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const cards = document.querySelectorAll('.card');
+            const videos = document.querySelectorAll('.video-background');
+            const totalCards = cards.length;
+
+            function setInitialPositions() {
+                cards.forEach((card, index) => {
+                    card.style.order = index;
+                    updateCardPosition(card, index);
+                });
+                changeBackground(cards[1].dataset.video);
+            }
+
+            function updateCardPosition(card, index) {
+                card.classList.remove('left', 'center', 'right', 'highlight');
+                if (index === 0) {
+                    card.classList.add('left');
+                } else if (index === 1) {
+                    card.classList.add('center', 'highlight');
+                } else if (index === 2) {
+                    card.classList.add('right');
+                }
+            }
+
+            function rotateCards(clickedIndex) {
+                const centerIndex = 1;
+                const direction = clickedIndex < centerIndex ? -1 : 1;
+                
+                cards.forEach((card) => {
+                    let currentIndex = parseInt(card.style.order);
+                    let newIndex = (currentIndex - direction + totalCards) % totalCards;
+                    card.style.order = newIndex;
+                    updateCardPosition(card, newIndex);
+                });
+
+                const newCenterCard = document.querySelector('.card.center');
+                changeBackground(newCenterCard.dataset.video);
+            }
+
+            function changeBackground(videoId) {
+                videos.forEach(video => {
+                    video.classList.remove('active');
+                    video.pause();
+                });
+                const newVideo = document.getElementById(videoId);
+                newVideo.classList.add('active');
+                newVideo.play();
+            }
+
+            setInitialPositions();
+
+            cards.forEach((card) => {
+                card.addEventListener('click', () => {
+                    const clickedIndex = parseInt(card.style.order);
+                    if (clickedIndex !== 1) { // If not the center card
+                        rotateCards(clickedIndex);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
