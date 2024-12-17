@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bringing a Dog Home: New Dog Owners Guide</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Pompiere&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Hedvig Letters Sans", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            background-color: white;
+        }
+
+        .hero-section {
+            background: #4CAF50;
+            color: white;
+            padding: 6rem 0;
+            margin-bottom: 2rem;
+        }
+        .section-title {
+            color: #4CAF50;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #000000;
+            padding-bottom: 0.5rem;
+        }
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin-bottom: 2rem;
+            overflow: hidden;
+        }
+        .card-title {
+            color: #4CAF50;
+        }
+        .card-text {
+            text-align: justify;
+        }
+        .card-header {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            padding: 1rem;
+        }
+        .list-group-item {
+            border: none;
+            padding: 0.75rem 1.25rem;
+            background-color: transparent;
+        }
+        .btn-amazon {
+            border: solid 2px #4CAF50;
+            padding: 10px 20px;
+            font-weight: bold;
+            color: #4CAF50;
+        }
+        .btn-amazon:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+        #table-of-contents {
+            background-color: white;
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        #table-of-contents ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        #table-of-contents li {
+            margin-bottom: 0.5rem;
+        }
+        #table-of-contents a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        #table-of-contents a:hover {
+            text-decoration: underline;
+        }
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.5);
+            transition: background-color 0.3s ease;
+        }
+        .navbar:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        .navbar-brand img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        .nav-link {
+            color: white !important;
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #4CAF50 !important;
+        }
+        .card-img-top-wrapper {
+          position: relative;
+          width: 100%;
+          padding-top: 100%; /* 4:3 aspect ratio */
+          overflow: hidden;
+        }
+
+        .card-img-top {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width:100%;
+          height: 100%;
+          object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#" style="font-size: x-larger;">Our Ware House</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav" style="font-size: smaller;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Our Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#content">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Bringing a Dog Home</h1>
+            <p class="lead">Solution to Some of the Basic Problems</p>
+            <a href="#table-of-contents" class="btn btn-light btn-lg mt-3">
+                <i class="fas fa-paw me-2"></i>Get Started
+            </a>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <section id="table-of-contents" class="mb-5 fw-bold">
+            <h2 class="section-title fw-bold">Table of Contents</h2>
+            <ul>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#space-dilemma">1. The Space Dilemma</a></li>
+                <li><a href="#allergy-predicament">2. The Allergy Predicament</a></li>
+                <li><a href="#housetraining-hurdle">3. The Housetraining Hurdle</a></li>
+                <li><a href="#time-crunch">4. The Time Crunch</a></li>
+                <li><a href="#financial-burden">5. The Financial Burden</a></li>
+                <li><a href="#conclusion">Conclusion</a></li>
+            </ul>
+        </section>
+
+        <section id="intro" class="mb-5">
+            <p class="card-text">Bringing a new dog into your family is quite interesting but let me assure you it is not without its difficulties. Specifically, you as a soon-to-be dog owner, might eager to know how all these can be overcome and what should be done to provide the best environment for the dog. Well, never mind – you don't have to face it alone and, anyway, I am going to explain to you how to proceed with it. In this guide, you will find an overview of the challenges that may arise when becoming a new dog parent and straightforward tips on what to do with recommendations for products that will help you become the best dog parent in the world.</p>
+        </section>
+
+        <section id="space-dilemma" class="mb-5">
+            <h2 class="section-title fw-bold">1. The Space Dilemma: Creating Safe Zones</h2>
+            <div class="card">
+                <div class="card-header">
+                    Setting boundaries for your new furry friend
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title mt-3">The Problem:</h5>
+                    <p class="card-text">Dogs, especially the young ones, are bound to wander into spaces within your home that they shouldn't be in. This can cause property damage or something worse; harm to your dog.</p>
+                    
+                    <h5 class="card-title mt-4">The Solution:</h5>
+                    <p class="card-text">Setting and being clear about the dos and don'ts is very essential for your own good and that of your dog. Baby gates and pet barriers are perfect for this job as they do not let the pets get to the restricted area. They enable you to partition your home, those are barrier that create safe spaces for your dog while at the same time denying the spaces you would not want your dog to access.</p>
+                    
+                    <h5 class="card-title mt-4">Product Recommendations:</h5>
+                    <ul>
+                        <li>Baby gates that can be easily fitted on the door and staircase.</li>
+                        <li>Pet gates for portable space partitioning</li>
+                    </ul>
+                    <p class="card-text">By so-doing, your pet will be in a position to be taken through the various segments of the house as a way of helping him explore the new environment in a controlled manner and safely.</p>
+                </div>
+            </div>
+
+            <!-- Dog Gate -->
+            <div class="container">
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="card product-card h-100">
+                      <!-- First product card content -->
+                        <div class="card-img-top-wrapper">
+                            <img src="https://m.media-amazon.com/images/I/A1YMdpHDiiL._AC_SL1500_.jpg" class="card-img-top" alt="Product Name">
+                        </div>
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Foldable Octagonal Metal Exercise Pet Play Pen for Dogs</h5>
+                        <ul>
+                          <li class="card-text">8 connected panels with thumb clips for connecting the ends together; 8 ground anchors for secure placement outdoors; made of durable iron wire with a rustproof finish</li>
+                          <li class="card-text">Extra-Small 24-inch exercise play pen (no door) for dogs up to 16 inches tall or for other small pets</li>
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center mb-2 mt-auto">
+                          <div class="rating">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-half text-warning"></i>
+                            <i class="bi bi-star text-warning"></i>
+                            <span class="ms-2 text-muted">(4.6)</span>
+                          </div>
+                          <span class="badge bg-primary">49,707 reviews</span>
+                        </div>
+                        <p class="h4 mb-3">$30.71</p>
+                        <div class="d-grid gap-2">
+                            <a href="https://amzn.to/3WR1HT4" class="btn btn-outline-secondary" role="button">View Details</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-6 mb-4">
+                    <div class="card product-card h-100">
+                      <!-- Second product card content -->
+                        <div class="card-img-top-wrapper">
+                            <img src="https://m.media-amazon.com/images/I/91dIqAyJy5L._AC_SL1500_.jpg" class="card-img-top" alt="Product Name">
+                        </div>
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Portable Pet Gate</h5>
+                        <ul>
+                          <li class="card-text">Our expandable dog gate is great for doorways and blocking off other indoor spaces to keep your pet safe and secure. This durable puppy gate is made of strong, appealing fieldstone gray plastic with adorable paw print accents.</li>
+                          <li class="card-text">This gate for dogs is 23" tall, fits a variety of openings 26" - 40" wide. Please measure carefully: it will not work in a wider doorway. It is easy to take down and install - which means you can use it anywhere you need it!</li>
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center mb-2 mt-auto">
+                          <div class="rating">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-half text-warning"></i>
+                            <i class="bi bi-star text-warning"></i>
+                            <span class="ms-2 text-muted">(4.2)</span>
+                          </div>
+                          <span class="badge bg-primary">47,318 reviews</span>
+                        </div>
+                        <p class="h4 mb-3">$25.99</p>
+                        <div class="d-grid gap-2">
+                            <a href="https://amzn.to/4dmuPs3" class="btn btn-outline-secondary" role="button">View Details</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="allergy-predicament" class="mb-5">
+            <h2 class="section-title fw-bold">2. The Allergy Predicament: Pet Dander and its Management</h2>
+            <div class="card">
+                <div class="card-header">
+                    Managing allergies for a comfortable home
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title mt-3">The Problem:</h5>
+                    <p class="card-text">You or a family member might be allergic to animals and thus a thought of having a dog at home might seem so scary. Actually, pet dander can cause allergies further worsening the conditions of discomfort and health of individuals.</p>
+                    
+                    <h5 class="card-title mt-4">The Solution:</h5>
+                    <p class="card-text">The key concepts a dog owner should consider when attempting to decrease the allergens produced by his pet proved informative. Things like an air purifier and hypo allergenic dog beds help a lot.</p>
+                    
+                    <h5 class="card-title mt-4">Product Recommendations:</h5>
+                    <ul>
+                        <li>Portable HEPA air purifiers that are specially made for trapping pet dander.</li>
+                        <li>Items that may not need to be washed directly such as Hypoallergenic dog beds that come with easily washable covers.</li>
+                    </ul>
+                    <p class="card-text">These products serve to limit allergens in your environment, in conjunction with one another. The air purifier assists in clearing the dander in the air; the hypoallergenic bed minimizes the number of allergens dog pick up in the house.</p>
+                </div>
+            </div>
+            
+            <!-- Air -->
+            <div class="container">
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="card product-card h-100">
+                      <!-- First product card content -->
+                        <div class="card-img-top-wrapper">
+                            <img src="https://m.media-amazon.com/images/I/61-WQy6sOxL._AC_SL1471_.jpg" class="card-img-top" alt="Product Name">
+                        </div>
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">LEVOIT Air Purifier for Home Allergies Pets Hair in Bedroom,</h5>
+                        <ul>
+                          <li class="card-text">A 45W long-life high-torque motor, a versatile 8.7" x 8.7" x 14.2" size, a 7.48 lb weight, a 141CFM CADR and up to 1095 ft² of purification area for original filter. Levoit Original Filter is HEPA-grade while operating in Sleep Mode, as tested by an independent lab</li>
+                          <li class="card-text">Enjoy fresh air in minutes with the Core 300-P Air Purifier ( Model No.: Core 300), which has a CADR of 141 CFM/240 m³/h and can purify the air of 1095 ft² space once/hour (based on Levoit's Original Filters; not applicable to other replacement filters)</li>
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center mb-2 mt-auto">
+                          <div class="rating">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-half text-warning"></i>
+                            <i class="bi bi-star text-warning"></i>
+                            <span class="ms-2 text-muted">(4.7)</span>
+                          </div>
+                          <span class="badge bg-primary">79,421 reviews</span>
+                        </div>
+                        <p class="h4 mb-3">$79.99</p>
+                        <div class="d-grid gap-2">
+                            <a href="https://amzn.to/4dIbb9I" class="btn btn-outline-secondary" role="button">View Details</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-6 mb-4">
+                    <div class="card product-card h-100">
+                      <!-- Second product card content -->
+                        <div class="card-img-top-wrapper">
+                            <img src="https://m.media-amazon.com/images/I/71Jz7CKCfGL._AC_SL1500_.jpg" class="card-img-top" alt="Product Name">
+                        </div>
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Winix 5500-2 Air Purifier with True HEPA</h5>
+                        <ul>
+                          <li class="card-text">True-HEPA filter captures 99. 97% of airborne pollutants; dust mites, pet dander, pollen and other allergens as small as 0. 3 microns.</li>
+                          <li class="card-text">Smart Sensors gauge the air and our Auto Mode adjusts the fan to filter the air as needed; with a sleep mode for silent night-time operation.</li>
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center mb-2 mt-auto">
+                          <div class="rating">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-half text-warning"></i>
+                            <i class="bi bi-star text-warning"></i>
+                            <span class="ms-2 text-muted">(4.7)</span>
+                          </div>
+                          <span class="badge bg-primary">38,198 reviews</span>
+                        </div>
+                        <p class="h4 mb-3">$132.99</p>
+                        <div class="d-grid gap-2">
+                            <div class="d-grid gap-2">
+                                <a href="https://amzn.to/3yszPfR" class="btn btn-outline-secondary" role="button">View Details</a>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <!-- Bed -->
+            <div class="container">
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="card product-card h-100">
+                      <!-- First product card content -->
+                        <div class="card-img-top-wrapper">
+                            <img src="https://m.media-amazon.com/images/I/81XghH7WWiL._AC_SX679_.jpg" class="card-img-top" alt="Product Name">
+                        </div>
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Bedsure Orthopedic Dog Bed for Medium Dogs</h5>
+                        <ul>
+                          <li class="card-text">Orthopedic Support: Our orthopedic dog sofa is designed to give your pet unparalleled support for a deep, dreamy sleep. High-density egg-crate foam helps distribute weight evenly and provides the perfect amount of pressure relief and joint support.</li>
+                          <li class="card-text">Pet Safe Materials: This standard 100 by OEKO-TEX certified dog bed consists of CertiPUR-US certified foam and luxurious flannel, creating a safe and comfortable space for your furry friend to rest and recharge. The non-skid bottom reduces slips and protects your dog.</li>
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center mb-2 mt-auto">
+                          <div class="rating">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-half text-warning"></i>
+                            <i class="bi bi-star text-warning"></i>
+                            <span class="ms-2 text-muted">(4.6)</span>
+                          </div>
+                          <span class="badge bg-primary">73,296 reviews</span>
+                        </div>
+                        <p class="h4 mb-3">$39.99</p>
+                        <div class="d-grid gap-2">
+                            <div class="d-grid gap-2">
+                                <a href="https://amzn.to/4cjJqU0" class="btn btn-outline-secondary" role="button">View Details</a>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-6 mb-4">
+                    <div class="card product-card h-100">
+                      <!-- Second product card content -->
+                        <div class="card-img-top-wrapper">
+                            <img src="https://m.media-amazon.com/images/I/810Qdiby1sL._AC_SL1500_.jpg" class="card-img-top" alt="Product Name">
+                        </div>
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">35 Inch Orthopedic Waterproof & Machine Washable Dog Bed with Egg Crate Foam Support</h5>
+                        <ul>
+                          <li class="card-text">Versatile Sizing for Happy Pups: From S-crate to XL-crate, our beds accommodate dogs of all sizes, fitting seamlessly into various indoor spaces and most dog crates on the market. Your furry friend deserves the perfect fit!</li>
+                          <li class="card-text">Crafted with Care: Our crates boast meticulous craftsmanship, with a minimum of 6 stitches per inch, bound fabric edges, and a design that holds up even after multiple washes. Quality that stands the test of time and keeps your pet cozy.</li>
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center mb-2 mt-auto">
+                          <div class="rating">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-half text-warning"></i>
+                            <i class="bi bi-star text-warning"></i>
+                            <span class="ms-2 text-muted">(4.3)</span>
+                          </div>
+                          <span class="badge bg-primary">1,745 reviews</span>
+                        </div>
+                        <p class="h4 mb-3">$24.99</p>
+                        <div class="d-grid gap-2">
+                            <div class="d-grid gap-2">
+                                <a href="https://amzn.to/3yDlYTS" class="btn btn-outline-secondary" role="button">View Details</a>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="housetraining-hurdle" class="mb-5">
+            <h2 class="section-title fw-bold">3. The Housetraining Hurdle: Accident Management</h2>
+            <div class="card">
+                <div class="card-header">
+                    Dealing with accidents during housetraining
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title mt-3">The Problem:</h5>
+                    <p class="card-text">It's hard as it is thrilling every time a new dog is brought home, especially when it is a puppy, the hardest task that comes with a new dog is to house train a puppy. Similar is the case with most of the accidents that occur, and it is such a nuisance to have to deal with cleaning up.</p>
+                    
+                    <h5 class="card-title mt-4">The Solution:</h5>
+                    <p class="card-text">However, it is significant to be exceptionally patient, although knowing that one has the appropriate products in store may significantly ease the situation. Training pads and enzyme cleaners are friendly during this phase.</p>
+                    
+                    <h5 class="card-title mt-4">Product Recommendations:</h5>
+                    <ul>
+                        <li>Designed special training pads to be used in areas where you want the dog to poop</li>
+                        <li>Biological detergents that are made to tackle pet messes and smell</li>
+                    </ul>
+                    <p class="card-text">Training pads act as a middle layer while the dog is being trained to go out; enzyme cleaner is used to clean the area effectively to avoid a recurrence of the problem in the same area.</p>
+                </div>
+            </div>
+
+            <!-- Remove Ordor -->
+            <div class="container">
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="card product-card h-100">
+                      <!-- First product card content -->
+                        <div class="card-img-top-wrapper">
+                            <img src="https://m.media-amazon.com/images/I/717JVEkT+FL._AC_SL1500_.jpg" class="card-img-top" alt="Product Name">
+                        </div>
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Carpet Freshener & Deodorizer Powder | Pet Odor Eliminator for Strong Odor & Pet Urine</h5>
+                        <ul>
+                          <li class="card-text">Powerful Deodorizing & Lasting Freshness - Harness the effective cleaning power of GNB's Carpet Freshener Powder. This superior deodorizer and cleaner eliminates strong odors for long-lasting freshness.</li>
+                          <li class="card-text">Refreshing Natural Lemon Scent - Delight in the refreshing aroma of lemon and eucalyptus with our mom-approved pet friendly carpet refresher. Its long-lasting scent revives your living spaces and transforms your home into a haven.</li>
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center mb-2 mt-auto">
+                          <div class="rating">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-half text-warning"></i>
+                            <i class="bi bi-star text-warning"></i>
+                            <span class="ms-2 text-muted">(4.4)</span>
+                          </div>
+                          <span class="badge bg-primary">6,234 reviews</span>
+                        </div>
+                        <p class="h4 mb-3">$24.99</p>
+                        <div class="d-grid gap-2">
+                            <div class="d-grid gap-2">
+                                <a href="https://amzn.to/3ApfPLD" class="btn btn-outline-secondary" role="button">View Details</a>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-6 mb-4">
+                    <div class="card product-card h-100">
+                      <!-- Second product card content -->
+                        <div class="card-img-top-wrapper">
+                            <img src="https://m.media-amazon.com/images/I/71vU5YvxpmL._AC_SX679_.jpg" class="card-img-top p-4" alt="Product Name">
+                        </div>
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Biokleen Bac-Out Pet Urine Odor Eliminator</h5>
+                        <div class="d-flex justify-content-between align-items-center mb-2 mt-auto">
+                          <div class="rating">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-half text-warning"></i>
+                            <i class="bi bi-star text-warning"></i>
+                            <span class="ms-2 text-muted">(4.5)</span>
+                          </div>
+                          <span class="badge bg-primary">764 reviews</span>
+                        </div>
+                        <p class="h4 mb-3">$24.98</p>
+                        <div class="d-grid gap-2">
+                            <div class="d-grid gap-2">
+                                <a href="https://amzn.to/4cHSLoZ" class="btn btn-outline-secondary" role="button">View Details</a>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <!-- training pad -->
+            <div class="container">
+                <div class="row">
+                  <div class="col-md-12 mb-4">
+                    <div class="card product-card h-100">
+                      <!-- First product card content -->
+                        <div class="card-img-top-wrapper">
+                            <img src="https://m.media-amazon.com/images/I/71Co+yjlWAL._AC_SL1500_.jpg" class="card-img-top" alt="Product Name">
+                        </div>
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Basics Dog and Puppy Pee Pads</h5>
+                        <ul>
+                          <li class="card-text">150 Regular-size standard-absorbency puppy pee pads; ideal for puppy training, senior dogs, car trips, and more</li>
+                          <li class="card-text">5-LAYER PROTECTION: Multi-layer construction with quick-dry surface and absorbent core that turns liquid into gel on contact</li>
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center mb-2 mt-auto">
+                          <div class="rating">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-half text-warning"></i>
+                            <i class="bi bi-star text-warning"></i>
+                            <span class="ms-2 text-muted">(4.5)</span>
+                          </div>
+                          <span class="badge bg-primary">264,843 reviews</span>
+                        </div>
+                        <p class="h4 mb-3">$30.87</p>
+                        <div class="d-grid gap-2">
+                          <div class="d-grid gap-2">
+                            <a href="https://amzn.to/4fHJ7VV" class="btn btn-outline-secondary" role="button">View Details</a>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="time-crunch" class="mb-5">
+            <h2 class="section-title fw-bold">4. The Time Crunch: Dog Care and the Hectic Lifestyle</h2>
+            <div class="card">
+                <div class="card-header">
+                    Balancing dog care with a busy schedule
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title mt-3">The Problem:</h5>
+                    <p class="card-text">The contemporary world is highly demanding and attempting to complement the management of a dog with daily rushing and running may seem rather challenging. You might be concerned that your dog will be bored or become unhealthy if left alone for large amounts of time, or get insufficient exercise and fun.</p>
+                    
+                    <h5 class="card-title mt-4">The Solution:</h5>
+                    <p class="card-text">As we ALL know, nothing can replace time spent with your dog, however, as life gets in the way periodically there are products and services to assist when we can not.</p>
+                    
+                    <h5 class="card-title mt-4">Product Recommendations:</h5>
+                    <ul>
+                        <li>Recreational services that involve dog walking during the mid of the day.</li>
+                        <li>Something like special toys and puzzles that you can engage your dog with to help in promoting his or her mental exercise.</li>
+                    </ul>
+                    <p class="card-text">These solutions allow your dog to have necessary exercise and mental activity on busy working days you can't spend time with your pet. Just to recall, most dogs like to be disciplined because when they are tired they will not misbehave!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="financial-burden" class="mb-5">
+            <h2 class="section-title fw-bold">5. The Financial Burden: Managing Pet Care Costs</h2>
+            <div class="card">
+                <div class="card-header">
+                    Planning for the financial aspects of dog ownership
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title mt-3">The Problem:</h5>
+                    <p class="card-text">There are many expenses which have to be encountered when having a dog, like food, toys, as well as the emergent visits to the vet. An important financial responsibility that can easily cause stress if you are not ready for it.</p>
+                    
+                    <h5 class="card-title mt-4">The Solution:</h5>
+                    <p class="card-text">Knowing this concept helps in trying to avoid incurring additional costs in treating physical complications that may be expensive, albeit executing them in the future would be relatively cheaper than paying for hospital expenses in the present.</p>
+                    
+                    <h5 class="card-title mt-4">Product Recommendations:</h5>
+                    <ul>
+                        <li>Detailed options of pet insurance to cater for medical bills in case of an eventuality</li>
+                        <li>Mobile applications that include the option to choose pets as the category for expenses to be had and to be tracked</li>
+                    </ul>
+                    <p class="card-text">Pet insurance can give pet owners confidence and possibly will protect a person from enormous amounts of expenses due to illness or injuries of the pet. On the other hand, tracking other miscellaneous pet expenses using a budgeting app allows for preparation for the regular and the occasional expenses.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="conclusion" class="mb-5">
+            <h2 class="section-title fw-bold">Conclusion: Preparation is key</h2>
+            <p class="card-text">Having a dog at home is joyous, but it is not without several problems as this video demonstrates. This way the common problems may be avoided, or in case they occur, their solution will already be at hand, which will make the cohabitation of a new pet and the owner happy and problem-free.</p>
+            
+            <p class="card-text">Please note that each dog is different, so this may suit a certain breed of dog, but not another one. Take your time and do not rush the process, also do not afraid to ask the veterinarians or professional dog trainers for help if you need it.</p>
+
+            <p class="card-text">If you equip yourself adequately before getting a dog, then you will be in a good position of making the right home for the dog to grow with love and in a safe environment. Happy pet parenting!</p>
